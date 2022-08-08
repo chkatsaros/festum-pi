@@ -277,6 +277,14 @@ strong {
   position: relative;
 }
 
+@media screen and (max-width: 480px) {
+  .site-header {
+    background-color: var(--section-bg-color);
+    padding: 0 !important;
+    background-size: contain;
+  }
+}
+
 .site-header .container {
   position: relative;
   z-index: 2;
