@@ -277,14 +277,6 @@ strong {
   position: relative;
 }
 
-@media screen and (max-width: 480px) {
-  .site-header {
-    background-color: var(--section-bg-color);
-    padding: 0 !important;
-    background-size: contain;
-  }
-}
-
 .site-header .container {
   position: relative;
   z-index: 2;
@@ -305,8 +297,8 @@ strong {
   background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
 }
 
-.site-menu-header {
-  background-image: url('../images/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg');
+.site-artists-header {
+  background-image: url('../images/header/artists.png');
 }
 
 .site-news-header {
@@ -719,9 +711,16 @@ strong {
   position: relative;
 }
 
+@media screen and (max-width: 480px) {
+  .site-footer {
+    background-color: var(--section-bg-color);
+    background-image: none;
+  }
+}
+
 .site-footer::before {
   content: "";
-  background: linear-gradient(to top, var(--dark-color), transparent 200%);
+  background: linear-gradient(to top, var(--dark-color), transparent 300%);
   position: absolute;
   top: 0;
   right: 0;

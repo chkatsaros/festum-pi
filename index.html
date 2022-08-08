@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -42,7 +42,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Artistes/Intervenants</a>
+                            <a class="nav-link" href="artists.html">Artistes/Intervenants</a>
                         </li>
 
                         <li class="nav-item">
@@ -68,18 +68,19 @@
         </nav>
 
         <main>
-            <header class="site-header site-main-header">
-                <div class="container">
+            <header class="site-header site-main-header d-none d-sm-block">
+                <div class="container-fluid">
                         <div class="col-lg-10 col-12 mx-auto" style="height: 250px;">
-                            <h1 class="text-white h-100 d-inline-block"></h1>
-
-                            <strong class="text-white"></strong>
                         </div>
 
                     </div>
                 </div>
 
                 <div class="overlay"></div>
+            </header>
+
+            <header class="d-block d-sm-none">
+                <img class="img-fluid" src="./images/header/site-main-background.png" alt="Main Image">
             </header>
 
 
@@ -159,7 +160,7 @@
         </footer>
 
         <!-- Modal -->
-        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+        <!-- <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -232,7 +233,7 @@
                 </div>
                 
             </div>
-        </div>
+        </div> -->
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
