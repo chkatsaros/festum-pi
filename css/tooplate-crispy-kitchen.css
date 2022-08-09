@@ -118,12 +118,12 @@ button {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 ::selection {
@@ -291,6 +291,10 @@ strong {
 
 .site-main-header {
   background-image: url('../images/header/site-main-background.png');
+}
+
+.site-math-header {
+  background-image: url('../images/header/math-header.jpg');
 }
 
 .site-about-header {
