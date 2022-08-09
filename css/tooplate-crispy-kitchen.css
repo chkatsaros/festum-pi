@@ -294,6 +294,8 @@ strong {
 }
 
 .site-math-header {
+  background-repeat: repeat;
+  background-size: contain;
   background-image: url('../images/header/math-header.jpg');
 }
 
