@@ -6,45 +6,44 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
 */
 
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #FFFFFF;
-  --primary-color:                #BA9847;
-  --secondary-color:              #f3af24;
-  --section-bg-color:             #B7C1C7;
-  --dark-color:                   #000000;
-  --title-color:                  #565758;
-  --news-title-color:             #292828;
-  --p-color:                      #717275;
-  --border-color:                 #eaeaea;
-  --border-radius-default:        .25rem;
+  --white-color: #ffffff;
+  --primary-color: #ba9847;
+  --secondary-color: #f3af24;
+  --section-bg-color: #b7c1c7;
+  --dark-color: #000000;
+  --title-color: #565758;
+  --news-title-color: #292828;
+  --p-color: #717275;
+  --border-color: #eaeaea;
+  --border-radius-default: 0.25rem;
 
-  --body-font-family:             'Montserrat', sans-serif;
+  --body-font-family: "Montserrat", sans-serif;
 
-  --h1-font-size:                 76px;
-  --h2-font-size:                 56px;
-  --h3-font-size:                 42px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 26px;
-  --h6-font-size:                 22px;
+  --h1-font-size: 76px;
+  --h2-font-size: 56px;
+  --h3-font-size: 42px;
+  --h4-font-size: 28px;
+  --h5-font-size: 26px;
+  --h6-font-size: 22px;
 
-  --p-font-size:                  18px;
-  --menu-font-size:               18px;
-  --category-font-size:           14px;
+  --p-font-size: 18px;
+  --menu-font-size: 18px;
+  --category-font-size: 14px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);    
-    position: relative;
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+  position: relative;
 }
 
 /*---------------------------------------
@@ -106,7 +105,7 @@ p,
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -146,7 +145,6 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-
 /*---------------------------------------
   CUSTOM BUTTON              
 -----------------------------------------*/
@@ -157,12 +155,11 @@ strong {
   padding: 10px 35px;
 }
 
-
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
 .navbar {
-  background: #B7C1C7;
+  background: #b7c1c7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -187,8 +184,8 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
-.nav-link:focus, 
+.navbar-nav .nav-link.active,
+.nav-link:focus,
 .nav-link:hover {
   color: var(--primary-color);
 }
@@ -220,7 +217,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -245,14 +243,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--dark-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon:before {
@@ -262,7 +261,6 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
 }
-
 
 /*---------------------------------------
   SITE HEADER              
@@ -285,34 +283,34 @@ strong {
 .site-news-detail-header {
   background: transparent;
   text-align: left;
-   padding-top: 6rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
 .site-main-header {
-  background-image: url('../images/header/site-main-background.png');
+  background-image: url("../images/header/site-main-background.png");
 }
 
 .site-math-header {
   background-repeat: repeat;
   background-size: contain;
-  background-image: url('../images/header/math-header.jpg');
+  background-image: url("../images/header/math-header.jpg");
 }
 
 .site-about-header {
-  background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
+  background-image: url("../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg");
 }
 
 .site-artists-header {
-  background-image: url('../images/header/artists.png');
+  background-image: url("../images/header/artists.png");
 }
 
 .site-news-header {
-  background-image: url('../images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg');
+  background-image: url("../images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg");
 }
 
 .site-contact-header {
-  background-image: url('../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg');
+  background-image: url("../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg");
 }
 
 .overlay {
@@ -323,7 +321,6 @@ strong {
   bottom: 0;
   left: 0;
 }
-
 
 /*---------------------------------------
   HERO              
@@ -356,7 +353,6 @@ strong {
   width: 100%;
   height: 100%;
 }
-
 
 /*---------------------------------------
   HERO SLIDE               
@@ -425,7 +421,7 @@ strong {
   right: 0;
 }
 
-.hero-carousel .carousel-control-prev:hover, 
+.hero-carousel .carousel-control-prev:hover,
 .hero-carousel .carousel-control-next:hover {
   background: var(--dark-color);
 }
@@ -458,7 +454,6 @@ strong {
 .reviews-icon {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   MENU               
@@ -504,7 +499,6 @@ strong {
   max-width: 450px;
   max-height: 450px;
 }
-
 
 /*---------------------------------------
   NEWS               
@@ -586,7 +580,7 @@ strong {
 }
 
 .news-author {
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
@@ -604,7 +598,6 @@ strong {
   width: 70px;
   height: 70px;
 }
-
 
 /*---------------------------------------
   CUSTOM FORM            
@@ -626,7 +619,6 @@ strong {
   background: var(--primary-color);
 }
 
-
 /*---------------------------------------
   SUBSCRIBE FORM            
 -----------------------------------------*/
@@ -634,7 +626,6 @@ strong {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
 
 /*---------------------------------------
   BOOKING FORM            
@@ -647,7 +638,7 @@ strong {
 #BookingModal .modal-content::before {
   content: "";
   background-color: var(--white-color);
-  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg');
+  background-image: url("../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -696,19 +687,18 @@ strong {
 }
 
 .BgImage {
-  background-image: url('../images/main-img-background.png');
+  background-image: url("../images/main-img-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
-
 /*---------------------------------------
   FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../images/header/site-main-background.png');
+  background-image: url("../images/header/site-main-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -739,10 +729,10 @@ strong {
 }
 
 .tooplate-mt30 {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 .tooplate-mt60 {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .copyright-text {
@@ -758,13 +748,12 @@ strong {
 }
 
 .site-footer a {
-  	color: #AAA;;
+  color: #aaa;
 }
 
 .site-footer p {
-	color: #AAA;
+  color: #aaa;
 }
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -799,7 +788,6 @@ strong {
   color: var(--primary-color);
 }
 
-
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -814,7 +802,6 @@ strong {
     font-size: 56px;
   }
 }
-
 
 @media screen and (max-width: 991px) {
   h1 {
@@ -862,7 +849,7 @@ strong {
   }
 
   #BookingModal .modal-content::before {
-    background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash-mobile.jpg');
+    background-image: url("../images/sincerely-media-HoEYgBL_Gcs-unsplash-mobile.jpg");
     background-position: bottom;
     top: auto;
     left: 0;
@@ -888,5 +875,22 @@ strong {
   .hero-carousel .carousel-control-next {
     width: 50px;
     height: 50px;
+  }
+}
+
+.text-size {
+  font-size: 20px;
+}
+
+.dot-size {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1180px) {
+  .text-size {
+    font-size: 16px;
+  }
+  .dot-size {
+    font-size: 22px;
   }
 }
