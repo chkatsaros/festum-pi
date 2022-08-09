@@ -117,12 +117,12 @@ button {
 }
 
 a {
-  color: var(--primary-color);
+  color: #576D7C;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 ::selection {
