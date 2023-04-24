@@ -8,7 +8,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Mathématiciens</title>
+  <title>Artistes/Intervenants</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
   <!-- CSS FILES -->
@@ -23,9 +23,12 @@
 
   <link href="css/styles.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="css/lightbox.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -33,23 +36,34 @@
   <div id="header"></div>
 
   <div id="content"></div>
-
+  
   <div id="footer"></div>
-
+  
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
     $(function () {
-      $("#header").load("components/header.html");
+        $("#header").load("components/fr/header.html");
     });
     $(function () {
-      $("#content").load("archive/2022/fr/math.html");
+        $("#content").load("archive/2022/fr/music.html");
     });
     $(function () {
-      $("#footer").load("components/footer.html");
+        $("#footer").load("components/fr/footer.html");
     });
+</script>
+  <script src="./js/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'albumLabel': "Artist %1 of %2",
+      'disableScrolling': true,
+      'positionFromTop': 100
+    })
   </script>
 </body>
 
