@@ -111,15 +111,15 @@
             </div>
         </div>
     </div>
-    <form action="https://formspree.io/your-email-here" method="POST" enctype="multipart/form-data">
+    <form action="https://formspree.io/f/mvondyed" method="POST" enctype="multipart/form-data">
         <label for="name">Ονοματεπώνυμο:</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
 
         <label for="phone">Τηλεφώνο:</label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" required>
 
         <label for="cv-upload" class="file-upload mt-3">
             <span class="d-flex align-items-center justify-content-center">
@@ -132,3 +132,12 @@
         <input id="submit-btn" type="submit" value="Submit" class="mt-2">
     </form>
 </section>
+<script>
+    const fileUpload = document.getElementById("cv-upload");
+    const fileUploadLabel = document.querySelector(".file-upload");
+
+    fileUpload.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) fileUploadLabel.innerHTML = file.name
+    });
+</script>
