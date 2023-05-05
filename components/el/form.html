@@ -111,26 +111,28 @@
             </div>
         </div>
     </div>
-    <form action="https://formspree.io/f/mvondyed" method="POST" enctype="multipart/form-data">
-        <label for="name">Ονοματεπώνυμο:</label>
-        <input type="text" name="name" id="name" required>
+    <div class="container">
+        <form action="https://formspree.io/f/mvondyed" method="POST" enctype="multipart/form-data">
+            <label for="name">Ονοματεπώνυμο:</label>
+            <input type="text" name="name" id="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
 
-        <label for="phone">Τηλεφώνο:</label>
-        <input type="tel" name="phone" id="phone" required>
+            <label for="phone">Τηλεφώνο:</label>
+            <input type="tel" name="phone" id="phone" required>
 
-        <label for="cv-upload" class="file-upload mt-3">
-            <span class="d-flex align-items-center justify-content-center">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <span>Βιογραφικό</span>
-            </span>
-        </label>
-        <input id="cv-upload" type="file" name="cv" accept=".pdf,.doc,.docx" required>
+            <label for="cv-upload" class="file-upload mt-3">
+                <span class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Βιογραφικό</span>
+                </span>
+            </label>
+            <input id="cv-upload" type="file" name="cv" accept=".pdf,.doc,.docx" required>
 
-        <input id="submit-btn" type="submit" value="Submit" class="mt-2">
-    </form>
+            <input id="submit-btn" type="submit" value="Submit" class="mt-2">
+        </form>
+    </div>
 </section>
 <script>
     const fileUpload = document.getElementById("cv-upload");
