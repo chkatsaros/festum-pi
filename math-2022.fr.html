@@ -8,7 +8,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Καλλιτέχνες/Ομιλητές</title>
+  <title>Mathématiciens</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
   <!-- CSS FILES -->
@@ -23,12 +23,9 @@
 
   <link href="css/styles.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/lightbox.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
 </head>
 
@@ -36,34 +33,27 @@
   <div id="header"></div>
 
   <div id="content"></div>
+  <div id="form"></div>
 
   <div id="footer"></div>
-  
+
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
     $(function () {
-      $("#header").load("components/el/header.html");
+      $("#header").load("components/2022/fr/header.html");
     });
     $(function () {
-      $("#content").load("archive/2023/el/music.html");
+      $("#content").load("archive/2022/fr/math.html");
     });
     $(function () {
-      $("#footer").load("components/el/footer.html");
+      $("#form").load("components/fr/form.html");
     });
-  </script>
-  <script src="./js/lightbox.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'alwaysShowNavOnTouchDevices': true,
-      'albumLabel': "Artist %1 of %2",
-      'disableScrolling': true,
-      'positionFromTop': 100
-    })
+    $(function () {
+      $("#footer").load("components/fr/footer.html");
+    });
   </script>
 </body>
 

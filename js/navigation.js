@@ -14,7 +14,7 @@ $(document).ready(function () {
       $(this).addClass("active");
     }
   });
-
+/*
   // Add click event listener to all nav links
   $(".nav-link").on("click", function (e) {
     // Check if the clicked link is the language switcher
@@ -43,4 +43,5 @@ $(document).ready(function () {
         newUrl.join(".") === "index.fr.html" ? "index.html" : newUrl.join(".");
     }
   });
+  */
 });
