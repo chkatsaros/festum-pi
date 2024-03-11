@@ -12,33 +12,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/" data-tab="home">Accueil</a>
+                    <a class="nav-link" href="/" rel="keep-params" data-tab="home">Accueil</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="music.fr.html" data-tab="music">Musique</a>
+                    <a class="nav-link" href="music.fr.html" rel="keep-params" data-tab="music">Musique</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="math.fr.html" data-tab="maths">Mathématiques</a>
+                    <a class="nav-link" href="math.fr.html" rel="keep-params" data-tab="maths">Mathématiques</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="manifesto.fr.html" data-tab="manifesto">Manifesto</a>
+                    <a class="nav-link" href="manifesto.fr.html" rel="keep-params" data-tab="manifesto">Manifesto</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-tab="math">Année</a>  
+                    <a class="nav-link" href="#" data-tab="math">Année</a>
                     <div class="dropdown-content">
-                        <a href="/index.html">2023</a> 
-                        <a href="/index-2022.html">2022</a>
-                
-                    
-                      </div>
+                        <a href="/index.html?year=2022">2022</a>
+                        <a href="/index.html?year=2023">2023</a>
+                        <a href="/index.html">2024</a>
+                    </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link lang-switcher" href="index.el.html" data-tab="language"><img
+                    <a class="nav-link lang-switcher" href="index.el.html" data-tab="language" rel="keep-params"><img
                             src="./images/flags/gr-flag.svg" width="24" /></a>
                 </li>
 
@@ -53,3 +52,16 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/navigation.js"></script>
+<script>
+    $("a[rel~='keep-params']").click(function (e) {
+        e.preventDefault();
+
+        var params = window.location.search,
+            dest = $(this).attr('href') + params;
+
+        // in my experience, a short timeout has helped overcome browser bugs
+        window.setTimeout(function () {
+            window.location.href = dest;
+        }, 100);
+    });
+</script>

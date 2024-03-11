@@ -36,28 +36,29 @@
   <div id="header"></div>
 
   <div id="content"></div>
-  
+
   <div id="footer"></div>
-  
+
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
     $(function () {
-        $("#header").load("components/fr/header.html");
+      $("#header").load("components/fr/header.html");
     });
     $(function () {
-        const params = new URLSearchParams(window.location.search);
-		const id = params.get('id');
-		const title = params.get('title');
-        document.title = title ?? `Class ${id}`
-        $("#content").load(`archive/2023/fr/classes/${id}.html`);
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      const title = params.get('title');
+      const year = params.get('year');
+      document.title = title ?? `Class ${id}`
+      $("#content").load(`archive/${year || '2024'}/fr/classes/${id}.html`);
     });
     $(function () {
-        $("#footer").load("components/fr/footer.html");
+      $("#footer").load("components/fr/footer.html");
     });
-</script>
+  </script>
   <script src="./js/lightbox.js"></script>
   <script>
     lightbox.option({

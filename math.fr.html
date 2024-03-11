@@ -46,10 +46,14 @@
       $("#header").load("components/fr/header.html");
     });
     $(function () {
-      $("#content").load("archive/2023/fr/math.html");
+      const params = new URLSearchParams(window.location.search);
+      const year = params.get('year');
+      $("#content").load(`archive/${year || '2024'}/fr/math.html`);
     });
     $(function () {
-      $("#form").load("components/fr/form.html");
+      const params = new URLSearchParams(window.location.search);
+      const year = params.get('year');
+      if (!year || Number(year) === new Date().getFullYear()) { $("#form").load("components/fr/form.html"); }
     });
     $(function () {
       $("#footer").load("components/fr/footer.html");

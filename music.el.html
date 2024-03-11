@@ -38,7 +38,7 @@
   <div id="content"></div>
 
   <div id="footer"></div>
-  
+
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -48,7 +48,9 @@
       $("#header").load("components/el/header.html");
     });
     $(function () {
-      $("#content").load("archive/2023/el/music.html");
+      const params = new URLSearchParams(window.location.search);
+      const year = params.get('year');
+      $("#content").load(`archive/${year || '2024'}/el/music.html`);
     });
     $(function () {
       $("#footer").load("components/el/footer.html");
