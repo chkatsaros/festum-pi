@@ -49,7 +49,7 @@
     $(function () {
       const params = new URLSearchParams(window.location.search);
       const year = params.get('year');
-      $("#content").load(`archive/${year || '2024'}/el/math.html`);
+      $("#content").load(`archive/${year || new Date().getFullYear()}/el/math.html`);
     });
     $(function () {
       const params = new URLSearchParams(window.location.search);

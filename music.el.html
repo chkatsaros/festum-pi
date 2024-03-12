@@ -50,7 +50,7 @@
     $(function () {
       const params = new URLSearchParams(window.location.search);
       const year = params.get('year');
-      $("#content").load(`archive/${year || '2024'}/el/music.html`);
+      $("#content").load(`archive/${year || new Date().getFullYear()}/el/music.html`);
     });
     $(function () {
       $("#footer").load("components/el/footer.html");

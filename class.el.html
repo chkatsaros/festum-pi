@@ -53,7 +53,7 @@
       const title = params.get('title');
       const year = params.get('year');
       document.title = title ?? `Class ${id}`
-      $("#content").load(`archive/${year || '2024'}/el/classes/${id}.html`);
+      $("#content").load(`archive/${year || new Date().getFullYear()}/el/classes/${id}.html`);
     });
     $(function () {
       $("#footer").load("components/el/footer.html");

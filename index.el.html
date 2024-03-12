@@ -57,7 +57,7 @@
         $(function () {
             const params = new URLSearchParams(window.location.search);
             const year = params.get('year');
-            $("#content").load(`archive/${year ?? '2023'}/el/home.html`);
+            $("#content").load(`archive/${year ?? new Date().getFullYear()}/el/home.html`);
         });
         $(function () {
             $("#footer").load("components/el/footer.html");

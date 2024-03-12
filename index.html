@@ -47,7 +47,7 @@
         $(function () {
             const params = new URLSearchParams(window.location.search);
             const year = params.get('year');
-            $("#content").load(`archive/${year || '2024'}/fr/home.html`);
+            $("#content").load(`archive/${year || new Date().getFullYear()}/fr/home.html`);
         });
 
         $(function () {
